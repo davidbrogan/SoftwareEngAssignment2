@@ -1,14 +1,15 @@
 package nuigalway.app;
 
 import java.sql.Date;
+import java.util.Calendar;
 import java.util.List;
 
 public class Course {
 	private String courseName;
 	private List<Module> modules;
 	private List<Student> students;
-	private Date startDate;
-	private Date endDate;
+	private Calendar startDate;
+	private Calendar endDate;
 	
 public Course()
 {
@@ -39,19 +40,19 @@ public void setStudents(List<Student> students) {
 	this.students = students;
 }
 
-public Date getStartDate() {
+public Calendar getStartDate() {
 	return startDate;
 }
 
-public void setStartDate(Date startDate) {
+public void setStartDate(Calendar startDate) {
 	this.startDate = startDate;
 }
 
-public Date getEndDate() {
+public Calendar getEndDate() {
 	return endDate;
 }
 
-public void setEndDate(Date endDate) {
+public void setEndDate(Calendar endDate) {
 	this.endDate = endDate;
 }
 }
