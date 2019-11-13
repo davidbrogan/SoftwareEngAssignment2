@@ -7,7 +7,18 @@ public class Student {
 	private int age;
 	private String dob;
 	private String id;
+	private String username;
+	
 	private List<Course> courseList;
+	public String getUsername() {
+		return this.name + this.age;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+
+	
 	public Student()
 	{
 		
