@@ -1,5 +1,6 @@
 package nuigalway.app;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Student {
@@ -8,8 +9,14 @@ public class Student {
 	private String dob;
 	private String id;
 	private String username;
+	private String courseRegistered;
+	private ArrayList<Module> moduleList;
 	
-	private List<Course> courseList;
+	public Student()
+	{
+		
+	}
+	
 	public String getUsername() {
 		return this.name + this.age;
 	}
@@ -17,12 +24,6 @@ public class Student {
 		this.username = username;
 	}
 
-
-	
-	public Student()
-	{
-		
-	}
 	public String getName() {
 		return name;
 	}
@@ -55,24 +56,21 @@ public class Student {
 		this.id = id;
 	}
 
-	public List<Course> getCourseList() {
-		return courseList;
+	public String getCourseRegistered() {
+		return courseRegistered;
 	}
 
-	public void setCourseList(List<Course> courseList) {
-		this.courseList = courseList;
+	public void setCourseRegistered(String courseRegistered) {
+		this.courseRegistered = courseRegistered;
 	}
 
 	public List<Module> getModuleList() {
 		return moduleList;
 	}
 
-	public void setModuleList(List<Module> moduleList) {
+	public void setModuleList(ArrayList<Module> moduleList) {
 		this.moduleList = moduleList;
 	}
 
-	private List<Module> moduleList;
 	
-	
-
 }
