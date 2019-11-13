@@ -8,7 +8,10 @@ public class Module {
 	private String moduleId;
 	private List<Student> students;
 	private List<Course> courses;
-	
+	public Module()
+	{
+		
+	}
 	public String getName() {
 		return name;
 	}
@@ -33,8 +36,5 @@ public class Module {
 	public void setCourses(List<Course> courses) {
 		this.courses = courses;
 	}
-	public Module()
-	{
-		
-	}
+	
 }
